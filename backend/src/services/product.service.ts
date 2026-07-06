@@ -1,8 +1,7 @@
-import productRepository = require('../repositories/product.repository');
 import customErrors = require('../utils/customErrors');
 import logger = require('../utils/logger');
 import db = require('../database/connection');
-
+import productRepository = require('../repositories/product.repository');
 const productService = {
   getAll: () => productRepository.findAll(),
   getById: (id: number) => productRepository.findById(id),
